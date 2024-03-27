@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add authorship metadata and link CSS and JS files -->
+    <link rel="stylesheet" href="Style.css">
+    <title>Lab 5 - JavaScript 1</title>
+</head>
+<body>
+    <div class="formcontainer">
+        <h1>Weekly Kitten Pictures Subsription 🐱</h1>
+        <hr>
+        <form action="registration.html" method="get" onsubmit="return validate();">
+            <!-- You will need to write the validate function for this form. -->
+
+            <br>
+            <div class="textfield">
+                <label for="email">Email Address</label>
+                <input type="text" name="email" id="email" placeholder="Email">
+                <p id="pEmail"></p>
+            </div>
+
+            <div class="textfield">
+                <label for="login">User Name</label>
+                <input type="text" name="login" id="login" placeholder="User name">
+                <p id="pUser"></p>
+            </div>
+
+            <div class="textfield">
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" placeholder="Password">
+                <p id="pPass"></p>
+            </div>
+        
+            <div class="textfield">
+                <label for="pass2">Re-type Password</label>
+                <input type="password" id="pass2" placeholder="Password">
+                <p id="pPass2"></p>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <label for="newsletter">I agree to receive Weekly Kitten Pictures newsletters</label>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" name="terms" id="terms">
+                <label for="terms">I agree to the terms and conditions</label>
+                <p id="pTerms"></p>
+            </div>
+
+            <button id="SignBTN" type="submit">Sign-Up</button>
+            <button id="ResetBTN" type="reset">Reset</button>
+
+            <script src="script.js"></script>
+
+        </form>
+    </div>
+
+</body>
+</html>
